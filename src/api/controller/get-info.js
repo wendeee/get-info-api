@@ -3,8 +3,9 @@ exports.getDetails = async (req, res) => {
  try {
   const currentDay = new Date().toLocaleString("en-US", { weekday: "long" });
   const utcTime = new Date().toISOString().replace(/\.\d{3}Z$/, "Z");
-  const gitHubFileUrl = "";
-  const githubRepoUrl = "";
+  const gitHubFileUrl =
+   "https://github.com/wendeee/get-info-api/blob/main/src/api/controller/get-info.js";
+  const githubRepoUrl = "https://github.com/wendeee/get-info-api";
   const statusCode = 200;
   res.status(200).json({
    slack_name: slack_name,
